@@ -343,49 +343,7 @@ a {
 
 }
 .right{
-  font-size:20px ;
+  font-size:23px ;
   font-weight: 900;
 }
 
-.mgri{
-  width: 86px;
-  height: 130px;
- 
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPjdXjfuxE5rY4nVbmczcRnUl1IVIDxFUXs4al5_sIujRrk-CkRmxbmtPezkfgxryev0&usqp=CAU);
-  margin-bottom: 7px;
- 
-}
-.gridt{
-  display: flex;
-  width: 90%;
-  margin: 10px auto;
-  height: 100px;
-  gap: 7px;
- 
-
-}
-.mgrim{
-  width: 265px;
-  height: 405px;
- 
-  
-}
-
-.m1{
-  border: 1.4px solid rgb(255, 255, 0);
-}
-
-h3{
-  white-space: unset;
-}
-
-
-@media (max-width: 378px) {
-  .mgrim img{
-    min-width: 208px;
-    height: 405px;
-    object-fit: contain;
-    
-  }
-
-}
