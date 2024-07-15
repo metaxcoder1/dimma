@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trendpic</title>
+    <link rel="stylesheet" href="tik.css" />
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">Trendpic</a>
+
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <i class="uil uil-shopping-cart-alt shopping-cart"></i>
+        </div>
+      
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+        </div>
+    </nav>
+    
+      <div class="wrapper">
+        <div class="mitem item">
+          <div class= "image-container">
+            <a href=""><img src="https://png.pngtree.com/png-clipart/20230108/original/pngtree-new-post-stock-png-image_8885583.png" alt="Samantha" />
+            </a>
+            </div>
+        <h4>TODAY</h4>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <a href=""><img src="https://5.imimg.com/data5/XS/DT/MY-3747740/mens-shirts.jpg" alt="Samantha" />
+            </div></a>
+            <h4>SHIRTS</h4>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <a href=""><img src="https://m.media-amazon.com/images/I/61enoib3vzL._AC_SX385_.jpg" alt="Sreeleela" />
+            </div></a>
+            <h4>PANTS</h4>
+        </div>
+        <div class="item">
+            <div class="image-container">
+             <a href=""> <img src="https://www.jiomart.com/images/product/original/rvrgwpjvsp/bruton-trendy-sports-shoes-for-men-blue-product-images-rvrgwpjvsp-0-202209021256.jpg?im=Resize=(500,630)" alt="Image 3" />
+            </div></a>
+            <h4>SHOES</h4>
+        </div>
+        <div class="item">
+            <div class="image-container">
+              <a href="">  <img src="https://cdn.shopclues.com/images1/thumbnails/61063/640/1/121262811-61063195-1660927478.jpg" alt="Image 4" />
+            </div></a>
+            <h4>BELTS</h4>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <a href=""><img src="https://us.danielwellington.com/cdn/shop/products/c8bd0bbe58c25c0caf52806dd0362df62569d70d.png?v=1679995411" alt="Image 5" />
+            </div></a>
+            <h4>WATCHES</h4>
+        </div>
+    </div>
+
+    <section class="recent">
+        <div class="topic">
+            <h3>RECENT POST</h3>
+            <i class="uil uil-angle-right-b right"></i>
+        </div>
+       
+            <div class="gridt">
+                <div class="mgrim"></div>
+                <div class="gridt2">
+                    <div class="mgri m1"></div>
+                    <div class="mgri m1"></div>
+                    <div class="mgri m1"></div>
+                </div>
+                
+            </div>
+
+    </section>
+
+</body>
+<script>
+    const nav = document.querySelector(".nav"),
+          searchIcon = document.querySelector("#searchIcon"),
+          navOpenBtn = document.querySelector(".navOpenBtn"),
+          navCloseBtn = document.querySelector(".navCloseBtn");
+
+    searchIcon.addEventListener("click", () => {
+        nav.classList.toggle("openSearch");
+        nav.classList.remove("openNav");
+        if (nav.classList.contains("openSearch")) {
+            return searchIcon.classList.replace("uil-search", "uil-times");
+        }
+        searchIcon.classList.replace("uil-times", "uil-search");
+    });
+
+    navOpenBtn.addEventListener("click", () => {
+        nav.classList.add("openNav");
+        nav.classList.remove("openSearch");
+        searchIcon.classList.replace("uil-times", "uil-search");
+    });
+
+    navCloseBtn.addEventListener("click", () => {
+        nav.classList.remove("openNav");
+    });
+</script>
+</html>
