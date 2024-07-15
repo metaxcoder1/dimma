@@ -239,7 +239,7 @@ a {
   
   object-fit: contain;
 }
- img {
+ .img {
   width: 95%;
   height: 95%;
   border-radius: 50%;
@@ -310,7 +310,7 @@ a {
     
     object-fit: contain;
   }
-   img {
+   .img {
     width: 95%;
     height: 95%;
     border-radius: 50%;
@@ -348,9 +348,10 @@ a {
 }
 
 .mgri{
-  width: 110px;
+  width: 86px;
   height: 130px;
-  background-color: #000000;
+ 
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPjdXjfuxE5rY4nVbmczcRnUl1IVIDxFUXs4al5_sIujRrk-CkRmxbmtPezkfgxryev0&usqp=CAU);
   margin-bottom: 7px;
  
 }
@@ -364,10 +365,10 @@ a {
 
 }
 .mgrim{
-  width: 150px;
+  width: 265px;
   height: 405px;
-
-  background-color: chartreuse;
+ 
+  
 }
 
 .m1{
@@ -376,4 +377,15 @@ a {
 
 h3{
   white-space: unset;
+}
+
+
+@media (max-width: 378px) {
+  .mgrim img{
+    min-width: 208px;
+    height: 405px;
+    object-fit: contain;
+    
+  }
+
 }
